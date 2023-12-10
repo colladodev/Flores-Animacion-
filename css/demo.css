@@ -26,8 +26,7 @@ body{
 .cd__intro{
    padding: 60px 30px;
    margin-bottom: 15px;
-        flex-direction: column;
-
+   flex-direction: column;
 }
 .cd__intro,
 .cd__credit{
@@ -44,7 +43,14 @@ body{
 .cd__intro h1 {
    font-size: 18pt;
    padding-bottom: 15px;
+}
 
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .cd__intro,
+  .cd__credit{
+      width: 100%; /* Ajusta el ancho al 100% para dispositivos móviles */
+  }
 }
 .cd__intro p{
    font-size: 14px;
